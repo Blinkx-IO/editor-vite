@@ -44,7 +44,7 @@ const blinkEditorMonacoWorkers = (options: MonacoWorkersOptions = {}): Plugin =>
 			} = options;
 
 			// Path they already exist in
-			const existingDir = path.resolve(__dirname, sourceDir);
+			const existingDir = path.resolve(config.root, sourceDir);
 
 			// Get build output directory from Vite config
 			const outDir = config.build?.outDir || 'dist';

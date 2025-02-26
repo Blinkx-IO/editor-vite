@@ -1,6 +1,6 @@
 {
   "name": "@blinkx/editor-vite",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Vite plugin for bundling Monaco editor workers for BlinkX editor",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -29,6 +29,9 @@
   "license": "MIT",
   "peerDependencies": {
     "vite": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "typescript": "^5.0.0",
