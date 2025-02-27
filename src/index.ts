@@ -146,4 +146,4 @@ const blinkEditorMonacoWorkers = (options: MonacoWorkersOptions = {}): Plugin =>
 		}
 	}
 }
-export default blinkEditorMonacoWorkers;
+export { blinkEditorMonacoWorkers };
