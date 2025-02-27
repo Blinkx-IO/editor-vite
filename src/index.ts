@@ -2,7 +2,7 @@ import { type Plugin, type ResolvedConfig } from 'vite';
 import fs from 'fs';
 import path from 'path';
 
-interface MonacoWorkersOptions {
+interface BlinkMonacoWorkersOptions {
 	/**
 	 * Source directory where Monaco workers are located
 	 * @default 'node_modules/@blinkx/editor/dist/workers'
@@ -34,7 +34,7 @@ interface MonacoWorkersOptions {
 	staticTargetDir?: string;
 }
 
-const blinkEditorMonacoWorkers = (options: MonacoWorkersOptions = {}): Plugin => {
+const blinkEditorMonacoWorkers = (options: BlinkMonacoWorkersOptions = {}): Plugin => {
 	let config: ResolvedConfig;
 
 	return {
@@ -146,4 +146,4 @@ const blinkEditorMonacoWorkers = (options: MonacoWorkersOptions = {}): Plugin =>
 		}
 	}
 }
-export { blinkEditorMonacoWorkers };
+export { blinkEditorMonacoWorkers, BlinkMonacoWorkersOptions };
